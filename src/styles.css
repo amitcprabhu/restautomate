@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.mat-input-wrapper{
+    width:700px !important;
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mat-search{
+    width: 150px !important;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.mat-textarea{
+    width: 95%;
+    height: 1000px !important;
+}

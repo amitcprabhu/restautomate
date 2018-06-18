@@ -3,7 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import { FormsModule } from '@angular/forms';
+
+import { MatButtonModule, MatCheckboxModule, MatInputModule , MatCardModule, MatSelectModule} from '@angular/material';
+import { HttpClientModule
+} from '@angular/common/http';
+
+import { HTTPService } from './Http-service.service';
 
 @NgModule({
   declarations: [
@@ -12,10 +18,17 @@ import {MatButtonModule, MatCheckboxModule} from '@angular/material';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule
+,
+    // material modules
     MatButtonModule, 
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatCardModule,
+    MatInputModule,
+    MatSelectModule
   ],
-  providers: [],
+  providers: [HTTPService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
